@@ -3,6 +3,7 @@ package com.zzz.spring_boot_thymeleaf.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 @Entity
 //@NamedQuery(name="Person.ffindByName",query="select * from person p where p.name=?")
@@ -12,6 +13,7 @@ public class Person {
 	@GeneratedValue//hibernate会自动生成一个名为HIBERNATE_SEQUENCE序列。
 	private Long id;
 	private String name;
+	@Min(value=5,message="不能小于5岁吧")
 	private Integer age;
 	private String address;
 	
