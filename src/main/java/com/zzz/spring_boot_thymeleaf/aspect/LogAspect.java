@@ -14,6 +14,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+/**
+ * @author zyl
+ * @date 2018年5月3日
+ * @desc AOP拦截器
+ */
 @Aspect
 @Component
 public class LogAspect {
